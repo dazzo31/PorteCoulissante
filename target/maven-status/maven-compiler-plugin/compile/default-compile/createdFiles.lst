@@ -1,0 +1,5 @@
+org\reliqcraft\PortcullisMover.class
+org\reliqcraft\PortcullisBlockListener.class
+org\reliqcraft\Portcullis.class
+org\reliqcraft\PortcullisPlugin.class
+org\reliqcraft\PortcullisMover$Status.class
