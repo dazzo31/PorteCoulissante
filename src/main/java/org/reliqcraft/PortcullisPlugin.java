@@ -83,13 +83,31 @@ public class PortcullisPlugin extends JavaPlugin {
         entityMovingEnabled = config.getBoolean("entityMoving");
         hoistingDelay = config.getInt("hoistingDelay");
         droppingDelay = config.getInt("droppingDelay");
-        portcullisMaterials = new HashSet<Material>();
-        portcullisMaterials.addAll(config.getStringList("portcullisMaterials").stream().map((x) -> Material.valueOf(x)).collect(Collectors.toSet()));
+        portcullisMaterials = new HashSet<>();
+        for (String matName : config.getStringList("portcullisMaterials")) {
+            try {
+                portcullisMaterials.add(Material.valueOf(matName));
+            } catch (IllegalArgumentException e) {
+                getLogger().warning("Invalid portcullis material in config: " + matName);
+            }
+        }
         allowFloating = config.getBoolean("allowFloating");
-        powerBlocks = new HashSet<Material>();
-        powerBlocks.addAll(config.getStringList("powerBlocks").stream().map((x) -> Material.valueOf(x)).collect(Collectors.toSet()));
-        additionalWallMaterials = new HashSet<Material>();
-        additionalWallMaterials.addAll(config.getStringList("additionalWallMaterials").stream().map((x) -> Material.valueOf(x)).collect(Collectors.toSet()));
+        powerBlocks = new HashSet<>();
+        for (String matName : config.getStringList("powerBlocks")) {
+            try {
+                powerBlocks.add(Material.valueOf(matName));
+            } catch (IllegalArgumentException e) {
+                getLogger().warning("Invalid power block material in config: " + matName);
+            }
+        }
+        additionalWallMaterials = new HashSet<>();
+        for (String matName : config.getStringList("additionalWallMaterials")) {
+            try {
+                additionalWallMaterials.add(Material.valueOf(matName));
+            } catch (IllegalArgumentException e) {
+                getLogger().warning("Invalid additional wall material in config: " + matName);
+            }
+        }
         startSoundURL = config.getString("startSoundURL");
         upSoundURL = config.getString("upSoundURL");
         downSoundURL = config.getString("downSoundURL");
