@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# PorteCoulissante
-=======
 # Porte Coulissante by Captain_Chaos
 # PorteCoulissante
 
