@@ -1,5 +1,7 @@
-# Porte Coulissante by Captain_Chaos
 # PorteCoulissante
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?style=flat&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/dazzo31)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-dazzo31-orange?style=flat&logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/dazzo31)
 
 A modern Spigot plugin for creating working portcullises in Minecraft 1.21.8 and above.
 
@@ -64,13 +66,18 @@ Edit `plugins/PorteCoulissante/config.yml` to customize:
 - If a chunk containing a moving portcullis is unloaded, it may stop mid-move. Power cycle to reset.
 - Always ensure the portcullis is adjacent to a powered block for reliable operation.
 
+## 💖 Support & Sponsorship
+
+If PorteCoulissante has helped your Minecraft server or saved you time, consider supporting ongoing development:
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on%20GitHub-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/dazzo31)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/dazzo31)
+
+---
+
 ## License
 This project is licensed under the GNU GPL v3. See LICENSE for details.
 
 ## Credits
 - Original author: Pepijn Schmitz
-- Modernization and maintenance: Dolphindalt
-
-## Support
-Open an issue on GitHub for bug reports or feature requests.
-This is a fork of Porte Coulissante by Captain_Chaos that is updated to work for paper-spigot 1.16.3.
+- Modernization and maintenance: Dolphindalt / dazzo31
